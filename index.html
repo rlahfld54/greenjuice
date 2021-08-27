@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- prefixfree -->
+    <script src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 내가 만든 파일 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/script.js">
+    <title>풀무원 녹즙 만들기</title>
+</head>
+
+<body>
+    <!-- 상단 -->
+    <div class="top">
+        <div class="container">
+            <div class="fl">
+                <ul>
+                    <li><a href="#">녹즙이야기</a></li>
+                    <li><a href="#">배달가능지역 검색</a></li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <a href="#" class="logo"><span class="hidden">풀무원녹즙</span></a>
+            <div class="gnb-wrap">
+                <ul>
+                    <li><a href="#">제품정보</a></li>
+                    <li><a href="#">맞춤제품찾기</a></li>
+                    <li><a href="#">시음신청</a></li>
+                    <li><a href="#">MY녹즙</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+            <div class="mymenu">
+                <a href="#" class="search"><img src="img/search.png"></a>
+                <a href="#" class="product"><img src="img/product.png"></a>
+                <a href="#" class="cart"><img src="img/cart.png"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 -->
+    <div class="main">
+        <div class="slide">
+            <!-- Swiper -->
+            <div class="swiper sw-main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main-1.jpg" alt="첫번째">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main-2.jpg" alt="첫번째">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main-3.jpg" alt="첫번째">
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- 개인화 영역 -->
+        <div class="personal-wrapper">
+            <div class="container">
+                <div class="personal-info">
+                    <p class="pmenu-name">고객님 안녕하세요!</p>
+                </div>
+                <div class="personal-menu">
+                    <div class="swiper sw-personal">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul>
+                                    <li style="margin-left: 9px;">
+                                        <a href="#">
+                                            <i class="ico ico-personal-01"></i>
+                                            <span class="lb">음용내역</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-02"></i>
+                                            <span class="lb">음용제품변경</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-03"></i>
+                                            <span class="lb">찜한제품</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-04"></i>
+                                            <span class="lb">고객번호등록/찾기</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-03"></i>
+                                            <span class="lb">찜한제품</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-04"></i>
+                                            <span class="lb">고객번호등록/찾기</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-05"></i>
+                                            <span class="lb">스마트청구서</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ico ico-personal-06"></i>
+                                            <span class="lb">배달건너뛰기</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-prd">
+                    <p class="message">지금 로그인하여 <strong>맞춤 제품을<br>추천</strong>받아보세요!</p>
+                    <a href="#" class="btn">로그인하기</a>
+                </div>
+            </div>
+        </div>
+        <!-- 추천제품 -->
+        <div class="recommend">
+            <div class="container">
+                <h2>오늘 이런 제품은 어떠세요?</h2>
+                <div class="recommend-list">
+                    <ul class="product">
+                        <li>
+                            <a href="#">
+                                <div class="badges">
+                                    <span class="badge badge-new">New</span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/prd-1.jpg" alt="새싹인삼">
+                                </div>
+                                <div class="price-info">
+                                    <span class="prd-title">새싹인삼</span>
+                                    <span class="price">2,700원</span>
+                                    <span class="volume">(100ml)</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="badges">
+                                    <span class="badge badge-new">New</span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/prd-2.jpg" alt="핸디밀 프로틴 PRO">
+                                </div>
+                                <div class="price-info">
+                                    <span class="prd-title">핸디밀 프로틴 PRO</span>
+                                    <span class="price">2,700원</span>
+                                    <span class="volume">(100ml)</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="badges">
+                                    <span class="badge badge-new">New</span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/prd-3.jpg" alt="노니엔클리어">
+                                </div>
+                                <div class="price-info">
+                                    <span class="prd-title">노니엔클리어</span>
+                                    <span class="price">2,700원</span>
+                                    <span class="volume">(100ml)</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="badges">
+                                    <span class="badge badge-new">New</span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="img/prd-4.jpg" alt="돌미나리와민들레">
+                                </div>
+                                <div class="price-info">
+                                    <span class="prd-title">돌미나리와민들레</span>
+                                    <span class="price">2,700원</span>
+                                    <span class="volume">(100ml)</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>상세하게 추천받기</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="contents">
+        <div class="container">
+            <div class="best-list">
+                <h2>베스트 제품</h2>
+                <ul>
+                    <li><a href="#">10대</a></li>
+                    <li><a href="#">20대</a></li>
+                    <li><a href="#">30대</a></li>
+                    <li><a href="#">40대</a></li>
+                    <li><a href="#">50대</a></li>
+
+                </ul>
+            </div>
+            <div class="best-boxs">
+                <div class="best-top">
+                    <div class="best-box"></div>
+                    <div class="best-box"></div>
+                </div>
+                <div class="best-bottom">
+                    <div class="best-box"></div>
+                    <div class="best-box"></div>
+                    <div class="best-box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 보라색배너 -->
+    <div class="banner">
+        <a href="#"><img src="img/puple-banner.jpg"></a>
+    </div>
+    <!-- 고객님 무엇이 궁금하세요? -->
+    <div class="csinfo">
+        <div class="container">
+            <h2 class="mtitle">고객님 무엇이 궁금하세요?</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="ico ico-cs-m-02"></i>
+                        <span class="category">제품</span>
+                        어떤 제품이<br>
+                        저에게 맞을까요?
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ico ico-cs-m-03"></i>
+                        <span class="category">음용고객</span>
+                        홈페이지에서<br>
+                        다른 제품으로 변경할 수 있나요?
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ico ico-cs-m-03"></i>
+                        <span class="category">음용고객</span>
+                        츌장이나 휴가 때문에<br>
+                        잠깐 못 먹을거 같은데<br>
+                        어떻게 해야하나요?
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ico ico-cs-m-01"></i>
+                        <span class="category">주문/배달</span>
+                        좀 더 편하게<br>
+                        결제하고 싶은데<br>
+                        어떤 종류가 있나요?
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="btn-m-more">
+                <span class="lb">바로가기</span>
+                <i class="ico ico-arr-right-sm-gray"></i>
+            </a>
+        </div>
+    </div>
+    <!--띠배너 슬라이드-->
+    <div class="banner-wrapper">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/pick.jpg" alt="1">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/drink.jpg" alt="2">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--공지사항, 고객센터, 배달가능지역검색-->
+        <div class="latest-info-wrapper" style="background-color: #fff;">
+            <div class="container">
+                <div class="latest-notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li>
+                            <a href="#">풀무원녹즙 홈페이지 점검 안내</a>
+                            <span class="date">2020.08.27</span>
+                        </li>
+                        <li>
+                            <a href="#">카카오톡 채널 추가하기</a>
+                            <span class="date">2020.06.10</span>
+                        </li>
+                        <li>
+                            <a href="#">내맘대로 주문하기</a>
+                            <span class="date">2020.06.03</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-m-more">
+                        <span class="lb">더보기</span>
+                        <i class="ico ico-arr-right-sm-gray"></i>
+                    </a>
+                </div>
+                <div class="cs-number">
+                    <h2 class="mtitle">고객 기쁨 센터</h2>
+                    <p class="number">080-800-0393</p>
+                    <span class="time">평일 <em>09:00 ~ 18:00</em></span>
+                </div>
+                <div class="delivery-info clearfix">
+                    <h2 class="mtitle">배달 가능지역 검색</h2>
+                    <p>원하시는 풀무원 녹즙<br>지점을 바로 찾아보세요!</p>
+                    <a href="/search/branch" class="btn-ico-sm btn-inquiry"><span class="lb">조회하기</span><i
+                            class="ico ico-arr-right-sm-bl"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- 하단 -->
+        <div class="footer-wrapper">
+            <div class="fnb-wrap">
+                <div class="container">
+                    <ul class="fmenu-wrap">
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                        <li><a href="#">사업소개</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-wrap">
+                <div class="container">
+                    <div class="f-logo">
+                        <span class="hidden">풀무원녹즙</span>
+                    </div>
+                    <div class="f-info">
+                        <div class="address">
+                            <dl class="address-top clearfix">
+                                <dt>회사명 :</dt>
+                                <dd>㈜풀무원녹즙</dd>
+                                <dt>대표이사 :</dt>
+                                <dd>김기석</dd>
+                                <dt>개인정보관리책임자 :</dt>
+                                <dd>김정만</dd>
+                                <dt>사업자등록번호 :</dt>
+                                <dd>301-81-98406</dd>
+                            </dl>
+                            <dl class="address-bottom clearfix">
+                                <dt>통신판매번호 :</dt>
+                                <dd>2016-충북증평-00045 <a href="#" onclick="">사업자정보확인</a></dd>
+                                <dt>주소 :</dt>
+                                <dd>㈜풀무원녹즙 충청북도 증평군 도안면 원명로 35</dd>
+                                <dt>고객센터 :</dt>
+                                <dd><span class="fc-dark-gray">080-800-0393</span> (평일 09:00~18:00 토,일, 공휴일 휴무)</dd>
+                            </dl>
+                        </div>
+                        <div class="f-site">
+                            <a href="#">풀무원가족사이트</a>
+                            <div>
+                                <ul class="f-site-list" style="display: none;">
+                                    <li><a href="#">풀무원겅강생활</a></li>
+                                    <li><a href="#">풀무원로하스</a></li>
+                                    <li><a href="#">풀무원베이비밀</a></li>
+                                    <li><a href="#">풀무원잇슬림</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">COPYRIGHT©pulmuonegreenjuice co.Ltd. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    const swiper = new Swiper('.sw-main', {
+        loop: true,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const mySwiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    });
+
+    const swPersonal = new Swiper('.sw-personal', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+
+</html>
