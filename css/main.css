@@ -481,6 +481,7 @@ body {
 .recommend .container {
     position: relative;
     display: block;
+    padding-top: 100px;
 }
 
 .recommend h2 {
