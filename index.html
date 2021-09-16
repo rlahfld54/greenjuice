@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -15,7 +17,7 @@
     <!-- 내가 만든 파일 -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="js/script.js">
+    <script src="js/script.js"></script>
     <title>풀무원 녹즙 만들기</title>
 </head>
 
@@ -176,9 +178,11 @@
                                     <img src="img/prd-1.jpg" alt="새싹인삼">
                                 </div>
                                 <div class="price-info">
-                                    <span class="prd-title">새싹인삼</span>
-                                    <span class="price">2,700원</span>
-                                    <span class="volume">(100ml)</span>
+                                    <p class="prd-title">새싹인삼</p>
+                                    <p class="prd-price">
+                                        <span class="price">2,700원</span>
+                                        <span class="volume">(100ml)</span>
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -191,9 +195,11 @@
                                     <img src="img/prd-2.jpg" alt="핸디밀 프로틴 PRO">
                                 </div>
                                 <div class="price-info">
-                                    <span class="prd-title">핸디밀 프로틴 PRO</span>
-                                    <span class="price">2,700원</span>
-                                    <span class="volume">(100ml)</span>
+                                    <p class="prd-title">핸디밀 프로틴 PRO</p>
+                                    <p class="prd-price">
+                                        <span class="price">2,700원</span>
+                                        <span class="volume">(100ml)</span>
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -206,9 +212,11 @@
                                     <img src="img/prd-3.jpg" alt="노니엔클리어">
                                 </div>
                                 <div class="price-info">
-                                    <span class="prd-title">노니엔클리어</span>
-                                    <span class="price">2,700원</span>
-                                    <span class="volume">(100ml)</span>
+                                    <p class="prd-title">노니엔클리어</p>
+                                    <p class="prd-price">
+                                        <span class="price">2,700원</span>
+                                        <span class="volume">(100ml)</span>
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -221,16 +229,18 @@
                                     <img src="img/prd-4.jpg" alt="돌미나리와민들레">
                                 </div>
                                 <div class="price-info">
-                                    <span class="prd-title">돌미나리와민들레</span>
-                                    <span class="price">2,700원</span>
-                                    <span class="volume">(100ml)</span>
+                                    <p class="prd-title">돌미나리와민들레</p>
+                                    <p class="prd-price">
+                                        <span class="price">2,700원</span>
+                                        <span class="volume">(100ml)</span>
+                                    </p>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <h3>상세하게 추천받기</h3>
+                <h3 class="btn-main-recommand">상세하게 추천받기</h3>
             </div>
         </div>
     </div>
@@ -245,18 +255,107 @@
                     <li><a href="#">30대</a></li>
                     <li><a href="#">40대</a></li>
                     <li><a href="#">50대</a></li>
-
                 </ul>
             </div>
             <div class="best-boxs">
                 <div class="best-top">
-                    <div class="best-box"></div>
-                    <div class="best-box"></div>
+                    <div class="best-box best-01">
+                        <div class="prd">
+                            <a href="#">
+                                <span class="ranking-num big"><em>1</em>위</span>
+                                <span class="thumb">
+                                    <img src="img/1.jpg" alt="식물성유산균 쌀 요거트">
+                                </span>
+                                <p class="title">식물성유산균 쌀 요거트</p>
+                                <span class="price-info" style="position: absolute;left: 16px;bottom: 158px;">
+                                    <span class="now-price">2,100원 </span>
+                                    <span class="volume">(130ml)</span>
+                                </span>
+                            </a>
+                            <button type="button" class="btn-prd-wishlist  wishlistBtn" data-widx="0" data-pidx="315"
+                                onclick="$(this).toggleClass('is-active')">
+                                <i class="ico ico-prd-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-box best-02">
+                        <div class="prd">
+                            <a href="#">
+                                <span class="ranking-num"><em>2</em>위</span>
+                                <span class="thumb">
+                                    <img src="img/2.jpg" alt="러브미 케일&셀러리">
+                                </span>
+                                <p class="title">러브미 케일&셀러리</p>
+                                <span class="price-info">
+                                    <span class="now-price">2,100원 </span>
+                                    <span class="volume">(130ml)</span>
+                                </span>
+                            </a>
+                            <button type="button" class="btn-prd-wishlist  wishlistBtn" data-widx="0" data-pidx="315"
+                                onclick="$(this).toggleClass('is-active')">
+                                <i class="ico ico-prd-heart"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="best-bottom">
-                    <div class="best-box"></div>
-                    <div class="best-box"></div>
-                    <div class="best-box"></div>
+                    <div class="best-box best-03">
+                        <div class="prd">
+                            <a href="#">
+                                <span class="ranking-num"><em>3</em>위</span>
+                                <span class="thumb">
+                                    <img src="img/3.jpg" alt="식물성유산균 위&amp;캡슐">
+                                </span>
+                                <p class="title">식물성유산균 위&amp;캡슐</p>
+                                <span class="price-info">
+                                    <span class="now-price">2,100원 </span>
+                                    <span class="volume">(130ml)</span>
+                                </span>
+                            </a>
+                            <button type="button" class="btn-prd-wishlist  wishlistBtn" data-widx="0" data-pidx="315"
+                                onclick="$(this).toggleClass('is-active')">
+                                <i class="ico ico-prd-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-box best-04">
+                        <div class="prd">
+                            <a href="#">
+                                <span class="ranking-num"><em>4</em>위</span>
+                                <span class="thumb">
+                                    <img src="img/4.jpg" alt="노니&깔라만시">
+                                </span>
+                                <p class="title">노니&깔라만시</p>
+                                <span class="price-info">
+                                    <span class="now-price">2,100원 </span>
+                                    <span class="volume">(130ml)</span>
+                                </span>
+                            </a>
+                            <button type="button" class="btn-prd-wishlist  wishlistBtn" data-widx="0" data-pidx="315"
+                                onclick="$(this).toggleClass('is-active')">
+                                <i class="ico ico-prd-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="best-box best-05">
+                        <div class="prd">
+                            <a href="#">
+                                <span class="ranking-num"><em>5</em>위</span>
+                                <span class="thumb">
+                                    <img src="img/6.jpg" alt="식물성유산균 오메가&치아씨드">
+                                </span>
+                                <p class="title">식물성유산균 오메가&<br>치아씨드</p>
+                                <span class="price-info" style="top: 22px;">
+                                    <span class="now-price">2,100원 </span>
+                                    <span class="volume">(130ml)</span>
+                                </span>
+                            </a>
+                            <button type="button" class="btn-prd-wishlist  wishlistBtn" data-widx="0" data-pidx="315"
+                                onclick="$(this).toggleClass('is-active')">
+                                <i class="ico ico-prd-heart"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -378,7 +477,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-wrap">
+            <div class="footer-wrap" style="background: #fff;">
                 <div class="container">
                     <div class="f-logo">
                         <span class="hidden">풀무원녹즙</span>
