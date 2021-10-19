@@ -42,6 +42,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* 스크롤바 없애기 */
+::-webkit-scrollbar {
+  display: none;
+}
+
 .clearfix:after {
   content: "";
 
@@ -71,7 +76,7 @@ body {
   margin: 0 auto;
 }
 
-/* 모달창 */
+/* 안내창 */
 .modal {
   position: fixed;
   left: 0;
@@ -80,41 +85,61 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 999999999999;
+  z-index: 9999999;
 }
 
-.modal-box {
+.modal-cont {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   display: block;
-  width: 800px;
-  height: 350px;
-  padding: 30px;
-  background: beige;
+  width: 550px;
+  height: 300px;
+  background: #fff;
   border-radius: 30px 0 30px 0;
+  padding: 50px;
 }
 
-.modal-box p {
+.modal-cont p {
+  position: relative;
+  display: block;
   font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 50px;
 }
 
-.modal-box span {
-  color: red;
+.modal-cont span {
+  position: relative;
+  display: block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
+  line-height: 1.4;
+  text-align: center;
+  color: #000;
 }
 
-.modal-close {
-  position: absolute;
-  right: 26px;
-  top: 23px;
-  background: powderblue;
-}
+.modal-cont button {
+  position: relative;
+  display: block;
+  float: right;
 
-.modal-hide {
-  display: none;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+  cursor: pointer;
+
+  margin-top: 30px;
+  border: 0;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 30px;
+  border-radius: 4px;
 }
 
 /* 위로가기 */
